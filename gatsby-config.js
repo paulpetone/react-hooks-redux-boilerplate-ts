@@ -17,11 +17,11 @@ module.exports = {
       resolve: `gatsby-alias-imports`,
       options: {
         aliases: {
-          '@components': `src/components`,
-          '@pageComponents': `src/components/pageComponents`,
-          '@pageHooks': `src/hooks/pageHooks`,
-          '@actions': `src/store/actions`,
-          '@hooks': `src/hooks`,
+          "@components": `src/components`,
+          "@pageComponents": `src/components/pageComponents`,
+          "@pageHooks": `src/hooks/pageHooks`,
+          "@actions": `src/store/actions`,
+          "@hooks": `src/hooks`,
         },
       },
     },

@@ -6,7 +6,7 @@
       "@pageComponents/*": ["./src/components/pageComponents/*"],
       "@pageHooks/*": ["./src/hooks/pageHooks/*"],
       "@actions/*": ["./src/store/actions/*"],
-      "@hooks/*": ["./src/hooks/*"],
+      "@hooks/*": ["./src/hooks/*"]
     },
     "module": "commonjs",
     "target": "esnext",
@@ -20,7 +20,7 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "removeComments": false,
-    "preserveConstEnums": true,
+    "preserveConstEnums": true
   },
-  "include": ["./src/**/*"],
+  "include": ["./src/**/*"]
 }
