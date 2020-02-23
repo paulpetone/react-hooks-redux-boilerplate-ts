@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@components/*": ["./src/components/*"],
+      "@pageComponents/*": ["./src/components/pageComponents/*"],
+      "@pageHooks/*": ["./src/hooks/pageHooks/*"],
+      "@actions/*": ["./src/store/actions/*"],
+      "@hooks/*": ["./src/hooks/*"],
+    },
+    "module": "commonjs",
+    "target": "esnext",
+    "jsx": "preserve",
+    "lib": ["dom", "es2015", "es2017"],
+    "strict": true,
+    "noEmit": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "removeComments": false,
+    "preserveConstEnums": true,
+  },
+  "include": ["./src/**/*"],
+}

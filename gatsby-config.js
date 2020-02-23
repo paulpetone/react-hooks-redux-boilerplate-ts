@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Change this at gatsby-config.js`,
+    description: `Change this at gatsby-config.js`,
+    author: `Change this at gatsby-config.js`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -13,8 +13,18 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-alias-imports`,
+      options: {
+        aliases: {
+          '@components': `src/components`,
+          '@pageComponents': `src/components/pageComponents`,
+          '@pageHooks': `src/hooks/pageHooks`,
+          '@actions': `src/store/actions`,
+          '@hooks': `src/hooks`,
+        },
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -27,8 +37,11 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    `gatsby-plugin-stylus`,
+    `gatsby-plugin-provide-react`,
+    `gatsby-plugin-ramda`,
+    `gatsby-plugin-typescript`,
   ],
 }
