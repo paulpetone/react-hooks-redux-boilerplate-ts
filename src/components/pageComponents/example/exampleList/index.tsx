@@ -2,7 +2,7 @@ import enhancer from './hooks'
 import Example1 from './Example1'
 import Example2 from './Example2'
 import Example3 from './Example3'
-import { ExampleListProps } from './interfaces'
+import { ExampleListProps } from '@pageComponents/example/interfaces'
 
 const ExampleList = ({
   items,

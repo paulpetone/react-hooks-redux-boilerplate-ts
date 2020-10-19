@@ -1,4 +1,4 @@
-import { Example1Props } from '../interfaces'
+import { Example1Props } from '@pageComponents/example/interfaces'
 
 export default ({ items, handleAddItem, onInputChange }: Example1Props) =>
     <>

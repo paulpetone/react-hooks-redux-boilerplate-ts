@@ -1,4 +1,4 @@
-import { Example3Props } from "../interfaces";
+import { Example3Props } from '@pageComponents/example/interfaces'
 
 export default ({ graphQLExample }: Example3Props) =>
     <>
