@@ -10,7 +10,7 @@ export default ({ items, handleAddItem, onInputChange }: Example1Props) =>
             ))}
         </ul>
         <form onSubmit={handleAddItem}>
-            <label htmlFor="example-1">Add Item -></label>
+            <label htmlFor="example-1">Add Item:</label>
             <input
             id="example-1"
             onChange={onInputChange}
