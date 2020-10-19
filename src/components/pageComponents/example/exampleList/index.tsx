@@ -2,15 +2,32 @@ import store from './store'
 import handlers from './handlers'
 import state from './state'
 import effects from './effects'
+import graphql from './graphql'
 
 interface Repos {
   name: string
+}
+
+interface Owner {
+  id: Int16Array
+}
+
+interface AnyOtherDataExample {
+  hi: string,
+  owner: Owner
+}
+
+interface GraphqlResult {
+  id: string,
+  nameWithOwner: string,
+  anyOtherData: AnyOtherDataExample
 }
 
 export default () => {
   const { addItem, items, fetchRepos, repos } = store()
   const { onInputChange, handleAddItem } = handlers()
   const { setInputValue, inputValue } = state()
+  const example: GraphqlResult = graphql()
   effects({ items, fetchRepos })
 
   return (
@@ -48,6 +65,27 @@ export default () => {
           <li key={`repos-${key}`}>{item.name}</li>
         ))}
       </ul>
+      <br />
+      <br />
+      <br />
+      <h2>Example 3</h2>
+      <i>
+        This third example uses gatsby-node.js to fetch data from API and set it to Graphql, and to retrieve this data
+        we are using the following file: @pageComponents/example/exampleList/graphql.tsx <br/>
+        This is very useful for SEO issues!
+      </i>
+      <br/>
+      <br/>
+      Id: {example.id}
+      <br/>
+      <br/>
+      NameWithOwner: {example.nameWithOwner}
+      <br/>
+      <br/>
+      AnyOtherData.Hi: {example.anyOtherData.hi}
+      <br/>
+      <br/>
+      AnyOtherData.Owner.id: {example.anyOtherData.owner.id}
     </>
   )
 }
