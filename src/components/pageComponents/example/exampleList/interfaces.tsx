@@ -29,7 +29,7 @@ export interface Repo {
 }
 
 export interface Owner {
-  id: Int32Array
+  id: number
 }
 
 export interface AnyOtherData {
