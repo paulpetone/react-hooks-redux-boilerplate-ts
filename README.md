@@ -65,6 +65,11 @@ Alias: `@hooks/{yourHook}`
 
 Just an alias for `src/store/actions`
 
+## @sharedInterfaces
+
+If you have a genrical interface that will be used at lot of files, you can use this alias to import the file located at:
+[https://github.com/paulpetone/react-hooks-redux-boilerplate-ts/blob/master/src/sharedInterfaces.tsx](https://github.com/paulpetone/react-hooks-redux-boilerplate-ts/blob/master/src/sharedInterfaces.tsx)
+
 # 🐺 Husky
 
 I'm using husky to `format` the code on every `commit` and `test` with jest on every `push`.

@@ -1,40 +1,30 @@
+import { IdNumber, ItemString, NameString } from '@sharedInterfaces'
+
 export interface ExampleListProps {
   graphQLExample: GraphQLExample,
-  repos: Array<Repo>,
-  items: Array<Item>,
+  repos: Array<NameString>,
+  items: Array<ItemString>,
   handleAddItem(e: React.FormEvent<HTMLFormElement>): void,
   onInputChange(e: React.ChangeEvent<HTMLInputElement>): void
 }
 
 export interface Example1Props {
-  items: Array<Item>,
+  items: Array<ItemString>,
   handleAddItem(e: React.FormEvent<HTMLFormElement>): void,
   onInputChange(e: React.ChangeEvent<HTMLInputElement>): void
 }
 
 export interface Example2Props {
-  repos: Array<Repo>
+  repos: Array<NameString>
 }
 
 export interface Example3Props {
   graphQLExample: GraphQLExample
 }
 
-export interface Item {
-  item: string
-}
-
-export interface Repo {
-  name: string
-}
-
-export interface Owner {
-  id: number
-}
-
 export interface AnyOtherData {
   hi: string,
-  owner: Owner
+  owner: IdNumber
 }
 
 export interface GraphQLExample {

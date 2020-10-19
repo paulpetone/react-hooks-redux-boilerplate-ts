@@ -22,6 +22,7 @@ module.exports = {
           "@actions": `src/store/actions`,
           "@hooks": `src/hooks`,
           "@helpers": `src/helpers`,
+          "@sharedInterfaces": `src/sharedInterfaces.tsx`,
         },
       },
     },

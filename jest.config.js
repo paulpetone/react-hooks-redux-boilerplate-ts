@@ -9,6 +9,7 @@ module.exports = {
     "^@pageComponents(.*)$": "<rootDir>src/components/pageComponents$1",
     "^@actions(.*)$": "<rootDir>src/store/actions$1",
     "^@hooks(.*)$": "<rootDir>src/hooks$1",
+    "^@sharedInterfaces(.*)$": "<rootDir>src/sharedInterfaces.tsx"
   },
   testPathIgnorePatterns: [`node_modules`, `\\.cache`, `<rootDir>.*/public`],
   transformIgnorePatterns: [`node_modules/(?!(gatsby)/)`],

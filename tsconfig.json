@@ -6,7 +6,8 @@
       "@pageComponents/*": ["./src/components/pageComponents/*"],
       "@actions/*": ["./src/store/actions/*"],
       "@hooks/*": ["./src/hooks/*"],
-      "@helpers/*": ["./src/helpers/*"]
+      "@helpers/*": ["./src/helpers/*"],
+      "@sharedInterfaces": ["./src/sharedInterfaces"]
     },
     "module": "commonjs",
     "target": "esnext",
