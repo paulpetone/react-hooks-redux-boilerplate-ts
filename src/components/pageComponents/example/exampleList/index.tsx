@@ -12,15 +12,14 @@ const ExampleList = ({
   repos
 }: ExampleListProps) => (
   <>
-    This is an example using all u gonna need to create any component (store,
-      handlers, state and effects)
+    This is an example using all u gonna need to create any component (store, handlers, state, effects and graphql)
     <br />
     <b>Take a look at components/pageComponents/example/exampleList</b>
-    <br /><br /><br />
+    <hr/>
     <Example1 items={items} handleAddItem={handleAddItem} onInputChange={onInputChange} />
-    <br /><br /><br />
+    <hr/>
     <Example2 repos={repos} />
-    <br /><br /><br />
+    <hr/>
     <Example3 graphQLExample={graphQLExample} />
   </>
 )
