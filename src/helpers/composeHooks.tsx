@@ -13,7 +13,7 @@ export default (...layers: Array<Function>) => (BaseComponent: Function) => {
 
 /*
 This helper allows u to compose your hooks, passing to the next layer your old props and the new ones!
-It always should be a function that returns a object. Example:
+It should always be a function that returns a object. Example:
 
 > component/hooks/index.tsx
 
