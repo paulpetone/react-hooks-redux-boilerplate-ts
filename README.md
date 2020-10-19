@@ -13,10 +13,6 @@
 $ git clone https://github.com/paulpetone/react-hooks-redux-boilerplate.git && cd react-hooks-redux-boilerplate && yarn
 ```
 
-not required, but
-`💫⭐ star this project ⭐💫`
-hehehe, only if you like it, of course
-
 ## Local development
 
 `$ yarn start`
@@ -53,7 +49,9 @@ Alias: `@components/{yourComponentFolder}||{componentIndexJs}`
 
 For each page, we can have reusable components or components that are specific for that url, for this specific components I created a `pageComponents` inside of `src/components`.
 
-You can see here [https://github.com/paulpetone/react-hooks-redux-boilerplate/blob/master/src/pages/example/index.js](https://github.com/paulpetone/react-hooks-redux-boilerplate/blob/master/src/pages/example/index.js) that I'm using a component that is only used by the `localhost:8000/example` page, that's why it is on `src/components/pageComponents/example/exampleList`
+You can see here [https://github.com/paulpetone/react-hooks-redux-boilerplate-ts/blob/master/src/pages/example/index.tsx](https://github.com/paulpetone/react-hooks-redux-boilerplate-ts/blob/master/src/pages/example/index.tsx) that I'm using a component that is only used by the `localhost:8000/example` page, that's why it is on `src/components/pageComponents/example/exampleList`
+
+Also, if you need to create one or more hooks that are just used by this page, I recommend you to create a folder inside the component folder called `hooks`. Just like I did at [https://github.com/paulpetone/react-hooks-redux-boilerplate-ts/blob/master/src/components/pageComponents/example/exampleList/hooks/index.tsx](https://github.com/paulpetone/react-hooks-redux-boilerplate-ts/blob/master/src/components/pageComponents/example/exampleList/hooks/index.tsx)
 
 Alias: `@pageComponents/{yourPage}/{yourComponent}`
 
@@ -62,12 +60,6 @@ Alias: `@pageComponents/{yourPage}/{yourComponent}`
 As we did for components, on hooks root we only have the reusable hooks, Ex: usually a fetcher hook will be used for a lot a components that handles a request, that's why our `src/hooks/useFetcher` is there.
 
 Alias: `@hooks/{yourHook}`
-
-### @pageHooks
-
-Also, same logic here, if we have some hooks that are used only by a single page, we should put this hooks here: `src/hooks/pageHooks/{yourPage}/{yourHook}`
-
-Alias: `@pageHooks/{yourPage}/{youHook}`
 
 ### @actions
 

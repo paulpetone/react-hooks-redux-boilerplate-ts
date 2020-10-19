@@ -19,7 +19,6 @@ module.exports = {
         aliases: {
           "@components": `src/components`,
           "@pageComponents": `src/components/pageComponents`,
-          "@pageHooks": `src/hooks/pageHooks`,
           "@actions": `src/store/actions`,
           "@hooks": `src/hooks`,
           "@helpers": `src/helpers`,
