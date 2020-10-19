@@ -18,5 +18,7 @@ export default () => {
         `
       )
 
-    return example
+    return {
+        graphQLExample: example
+    }
 }

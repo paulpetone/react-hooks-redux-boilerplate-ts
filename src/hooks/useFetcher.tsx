@@ -5,7 +5,7 @@ import fetchDataAction from '@actions/fetchData'
 
 interface FetcherParams {
   key: string,
-  url: string
+  url: string | undefined
 }
 
 const useFetcher = () => {

@@ -15,4 +15,6 @@ export default ({ items, fetchRepos }: Effects) => {
     document.title = `${items.length} items`
     console.log('componentDidUpdate example', items.length)
   }, [items])
+
+  return {}
 }

@@ -1,7 +1,10 @@
 import { useSelector } from 'react-redux'
 import { path, ifElse, is, always } from 'ramda'
+import useFetcher from '@hooks/useFetcher'
 
-const useItems = (fetcher: Function) => {
+const useItems = () => {
+  const fetcher = useFetcher()
+  
   const fetchRepos = () => {
     fetcher({
       key: 'repos',

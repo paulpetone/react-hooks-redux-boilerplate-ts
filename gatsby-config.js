@@ -22,6 +22,7 @@ module.exports = {
           "@pageHooks": `src/hooks/pageHooks`,
           "@actions": `src/store/actions`,
           "@hooks": `src/hooks`,
+          "@helpers": `src/helpers`,
         },
       },
     },
