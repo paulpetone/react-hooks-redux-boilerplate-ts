@@ -1,9 +1,23 @@
 export interface ExampleListProps {
-  items: Array<Item>,
-  onInputChange(e: React.ChangeEvent<HTMLInputElement>): void,
-  handleAddItem(e: React.FormEvent<HTMLFormElement>): void,
   graphQLExample: GraphQLExample,
+  repos: Array<Repo>,
+  items: Array<Item>,
+  handleAddItem(e: React.FormEvent<HTMLFormElement>): void,
+  onInputChange(e: React.ChangeEvent<HTMLInputElement>): void
+}
+
+export interface Example1Props {
+  items: Array<Item>,
+  handleAddItem(e: React.FormEvent<HTMLFormElement>): void,
+  onInputChange(e: React.ChangeEvent<HTMLInputElement>): void
+}
+
+export interface Example2Props {
   repos: Array<Repo>
+}
+
+export interface Example3Props {
+  graphQLExample: GraphQLExample
 }
 
 export interface Item {
