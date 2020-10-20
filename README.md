@@ -165,37 +165,21 @@ It's ready to implement, we have 2 examples on `@components/__tests__`
 
 ##### From gatsby readme:
 
-  
-
 A quick look at the top-level files and directories you'll see in a Gatsby project.
 
-  
-
-.
-
-├── node_modules
-
-├── src
-
-├── .gitignore
-
-├── .prettierrc
-
-├── gatsby-browser.js
-
-├── gatsby-config.js
-
-├── gatsby-node.js
-
-├── gatsby-ssr.js
-
-├── LICENSE
-
-├── package-lock.json
-
-├── package.json
-
-└── README.md
+    .
+    ├── node_modules
+    ├── src
+    ├── .gitignore
+    ├── .prettierrc
+    ├── gatsby-browser.js
+    ├── gatsby-config.js
+    ├── gatsby-node.js
+    ├── gatsby-ssr.js
+    ├── LICENSE
+    ├── package-lock.json
+    ├── package.json
+    └── README.md
 
   
 
