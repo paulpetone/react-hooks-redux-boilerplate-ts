@@ -1,4 +1,4 @@
-import { IdNumber, ItemString, NameString } from '@sharedInterfaces'
+import { IdNumber, ItemString, NameString } from '@interfaces/SharedInterfaces'
 
 export interface ExampleListProps {
   graphQLExample: GraphQLExample,
@@ -28,7 +28,7 @@ export interface AnyOtherData {
 }
 
 export interface GraphQLExample {
-  id: string,
+  url: string,
   nameWithOwner: string,
   anyOtherData: AnyOtherData
 }

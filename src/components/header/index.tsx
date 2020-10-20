@@ -13,10 +13,10 @@ export default ({ siteTitle }: Props) => (
         <Link to="/">Home</Link>
       </li>
       <li>
-        <Link to="/example">ExampleList</Link>
+        <Link to="/example">Examples of usage</Link>
       </li>
       <li>
-        <Link to={`/dynamic-route/${Date.now()}`}>Dynamic route example</Link>
+        <Link to={`/pageWithUrlParams/${Date.now()}`}>Page with url params</Link>
       </li>
       <li>
         <Link to="/about">About</Link>

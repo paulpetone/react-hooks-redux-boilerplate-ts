@@ -67,7 +67,7 @@ Just an alias for `src/store/actions`
 
 ## @sharedInterfaces
 
-If you have a genrical interface that will be used at lot of files, you can use this alias to import the file located at:
+If you have a generical interface that will be used on lot of files, you can use this alias to import the file located at:
 [https://github.com/paulpetone/react-hooks-redux-boilerplate-ts/blob/master/src/sharedInterfaces.tsx](https://github.com/paulpetone/react-hooks-redux-boilerplate-ts/blob/master/src/sharedInterfaces.tsx)
 
 # 🐺 Husky

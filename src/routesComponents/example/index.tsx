@@ -1,4 +1,4 @@
-import ExampleList from '@components/pageComponents/example/exampleList'
+import ExamplesOfUsage from './components/examplesOfUsage'
 import Layout from '@components/layout'
 import SEO from '@components/seo'
 
@@ -10,6 +10,6 @@ export default () => (
       lang="lang"
       title="title"
     />
-    <ExampleList />
+    <ExamplesOfUsage />
   </Layout>
 )

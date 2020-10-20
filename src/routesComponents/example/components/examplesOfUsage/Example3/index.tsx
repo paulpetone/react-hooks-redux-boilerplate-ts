@@ -1,4 +1,4 @@
-import { Example3Props } from '@pageComponents/example/interfaces'
+import { Example3Props } from '@interfaces/ExampleInterfaces'
 
 export default ({ graphQLExample }: Example3Props) =>
     <>
@@ -10,7 +10,7 @@ export default ({ graphQLExample }: Example3Props) =>
         </i>
         <br />
         <br />
-        Id: {graphQLExample.id}
+        Url: {graphQLExample.url}
         <br />
         <br />
         NameWithOwner: {graphQLExample.nameWithOwner}
@@ -19,5 +19,5 @@ export default ({ graphQLExample }: Example3Props) =>
         AnyOtherData.Hi: {graphQLExample.anyOtherData.hi}
         <br />
         <br />
-        AnyOtherData.Owner.id: {graphQLExample.anyOtherData.owner.id}
+        AnyOtherData.Owner.id: {`${graphQLExample.anyOtherData.owner.id}`}
     </>

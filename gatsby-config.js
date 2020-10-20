@@ -18,11 +18,12 @@ module.exports = {
       options: {
         aliases: {
           "@components": `src/components`,
-          "@pageComponents": `src/components/pageComponents`,
+          "@pages": `src/pages`,
           "@actions": `src/store/actions`,
           "@hooks": `src/hooks`,
           "@helpers": `src/helpers`,
-          "@sharedInterfaces": `src/sharedInterfaces.tsx`,
+          "@interfaces": `src/interfaces`,
+          "@sharedInterfaces": `src/interfaces/SharedInterfaces.tsx`,
         },
       },
     },
