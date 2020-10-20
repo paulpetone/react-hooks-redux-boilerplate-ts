@@ -15,7 +15,7 @@ const ExampleList = ({
   <div className="examples">
     This is an example using all u gonna need to create any component (store, handlers, state, effects and graphql)
     <br />
-    <b>Take a look at components/pageComponents/example/exampleList</b>
+    <b>Take a look at @routesComponents/example/examplesOfUsage component</b>
     <hr/>
     <Example1 items={items} handleAddItem={handleAddItem} onInputChange={onInputChange} />
     <hr/>
