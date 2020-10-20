@@ -18,7 +18,7 @@ module.exports = {
       options: {
         aliases: {
           "@components": `src/components`,
-          "@pages": `src/pages`,
+          "@routesComponents": `src/routesComponents`,
           "@actions": `src/store/actions`,
           "@hooks": `src/hooks`,
           "@helpers": `src/helpers`,
