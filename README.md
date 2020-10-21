@@ -148,3 +148,5 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 ## 💫 Deploy
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/paulpetone/react-hooks-redux-boilerplate-ts)
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c01f4098-55c4-4ded-981b-024eef7e8be5/deploy-status)](https://app.netlify.com/sites/react-hooks-redux-boilerplate-ts/deploys)
