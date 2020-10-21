@@ -1,4 +1,4 @@
-import ExamplesOfUsage from '@routesComponents/example/components/ExamplesOfUsage'
+import ExamplesOfUsage from '@routesComponents/example/components/examplesOfUsage'
 import Layout from '@components/layout'
 import SEO from '@components/seo'
 
