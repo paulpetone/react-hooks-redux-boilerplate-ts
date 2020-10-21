@@ -1,0 +1,90 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ExamplesOfUsage renders correctly 1`] = `
+<body>
+  <div>
+    <div
+      class="examples"
+    >
+      This is an example using all u gonna need to create any component (store, handlers, state, effects and graphql)
+      <br />
+      <b>
+        Take a look at @routesComponents/example/examplesOfUsage component
+      </b>
+      <hr />
+      <h2>
+        Example 1
+      </h2>
+      <i>
+        This first 
+        &lt;ul&gt;
+         uses a simple reducer
+      </i>
+      <ul>
+        <li>
+          store item
+        </li>
+      </ul>
+      <form>
+        <label
+          for="example-1"
+        >
+          Add Item:
+        </label>
+        <input
+          id="example-1"
+          type="text"
+        />
+        <button
+          type="submit"
+        >
+          Add Item
+        </button>
+      </form>
+      <hr />
+      <h2>
+        Example 2
+      </h2>
+      <i>
+        This second 
+        &lt;ul&gt;
+         uses an async information from store
+      </i>
+      <ul />
+      <hr />
+      <h2>
+        Example 3
+      </h2>
+      <i>
+        This third example uses gatsby-node.js to fetch data from API and set it to Graphql, and to retrieve this data we are using the following file: @routesComponents/example/examplesOfUsage/hooks/useGraphQLData.tsx 
+        <br />
+        This is very useful for SEO issues!
+      </i>
+      <br />
+      <br />
+      <i>
+        Url: 
+        https://github.com/gatsbyjs/gatsby
+      </i>
+      <br />
+      <br />
+      <i>
+        NameWithOwner: 
+        gatsbyjs/gatsby
+      </i>
+      <br />
+      <br />
+      <i>
+        AnyOtherData.Hi: 
+        hola
+      </i>
+      <br />
+      <br />
+      <i>
+        AnyOtherData.Owner.id: 
+        12551863
+      </i>
+    </div>
+  </div>
+</body>
+`;

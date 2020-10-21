@@ -6,7 +6,7 @@ export default ({ repos }: Example2Props) =>
         <i>This second {`<ul>`} uses an async information from store</i>
         <ul>
             {repos.map((item, key: Number) => (
-            <li key={`repos-${key}`}>{item.name}</li>
+                <li key={`repos-${key}`}>{item.name}</li>
             ))}
         </ul>
     </>

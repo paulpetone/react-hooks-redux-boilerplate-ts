@@ -10,14 +10,14 @@ export default ({ graphQLExample }: Example3Props) =>
         </i>
         <br />
         <br />
-        Url: {graphQLExample.url}
+        <i>Url: {graphQLExample.url}</i>
         <br />
         <br />
-        NameWithOwner: {graphQLExample.nameWithOwner}
+        <i>NameWithOwner: {graphQLExample.nameWithOwner}</i>
         <br />
         <br />
-        AnyOtherData.Hi: {graphQLExample.anyOtherData.hi}
+        <i>AnyOtherData.Hi: {graphQLExample.anyOtherData.hi}</i>
         <br />
         <br />
-        AnyOtherData.Owner.id: {`${graphQLExample.anyOtherData.owner.id}`}
+        <i>AnyOtherData.Owner.id: {`${graphQLExample.anyOtherData.owner.id}`}</i>
     </>

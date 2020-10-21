@@ -1,6 +1,6 @@
 module.exports = {
   transform: {
-    "^.+\\.tsx?$": `<rootDir>/jestConfig/jest-preprocess.js`,
+    "^.+\\.[jt]sx?$": `<rootDir>/jestConfig/jest-preprocess.js`,
   },
   moduleNameMapper: {
     ".+\\.(css|styl|less|sass|scss)$": `identity-obj-proxy`,
@@ -10,7 +10,8 @@ module.exports = {
     "^@actions(.*)$": "<rootDir>src/store/actions$1",
     "^@hooks(.*)$": "<rootDir>src/hooks$1",
     "^@interfaces(.*)$": "<rootDir>src/interfaces$1",
-    "^@sharedInterfaces(.*)$": "<rootDir>src/interfaces/SharedInterfaces.tsx"
+    "^@sharedInterfaces(.*)$": "<rootDir>src/interfaces/SharedInterfaces.tsx",
+    "^@helpers(.*)$": "<rootDir>src/helpers$1"
   },
   testPathIgnorePatterns: [`node_modules`, `\\.cache`, `<rootDir>.*/public`],
   transformIgnorePatterns: [`node_modules/(?!(gatsby)/)`],
