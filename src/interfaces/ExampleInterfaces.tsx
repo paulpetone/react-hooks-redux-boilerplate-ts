@@ -1,16 +1,16 @@
-import { IdNumber, ItemString, NameString } from '@interfaces/SharedInterfaces'
+import { IdNumber, ItemString, NameString } from "@interfaces/SharedInterfaces"
 
 export interface ExampleListProps {
-  graphQLExample: GraphQLExample,
-  repos: Array<NameString>,
-  items: Array<ItemString>,
-  handleAddItem(e: React.FormEvent<HTMLFormElement>): void,
+  graphQLExample: GraphQLExample
+  repos: Array<NameString>
+  items: Array<ItemString>
+  handleAddItem(e: React.FormEvent<HTMLFormElement>): void
   onInputChange(e: React.ChangeEvent<HTMLInputElement>): void
 }
 
 export interface Example1Props {
-  items: Array<ItemString>,
-  handleAddItem(e: React.FormEvent<HTMLFormElement>): void,
+  items: Array<ItemString>
+  handleAddItem(e: React.FormEvent<HTMLFormElement>): void
   onInputChange(e: React.ChangeEvent<HTMLInputElement>): void
 }
 
@@ -23,12 +23,12 @@ export interface Example3Props {
 }
 
 export interface AnyOtherData {
-  hi: string,
+  hi: string
   owner: IdNumber
 }
 
 export interface GraphQLExample {
-  url: string,
-  nameWithOwner: string,
+  url: string
+  nameWithOwner: string
   anyOtherData: AnyOtherData
 }

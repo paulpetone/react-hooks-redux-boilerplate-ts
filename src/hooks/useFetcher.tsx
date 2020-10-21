@@ -1,10 +1,10 @@
-import { useDispatch } from 'react-redux'
+import { useDispatch } from "react-redux"
 
 // Actions
-import fetchDataAction from '@actions/fetchData'
+import fetchDataAction from "@actions/fetchData"
 
 interface FetcherParams {
-  key: string,
+  key: string
   url: string | undefined
 }
 

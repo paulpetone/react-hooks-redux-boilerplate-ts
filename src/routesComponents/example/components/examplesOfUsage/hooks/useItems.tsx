@@ -1,11 +1,11 @@
-import { useSelector, useDispatch } from 'react-redux'
+import { useSelector, useDispatch } from "react-redux"
 
 interface State {
   items: Array<string>
 }
 
 // Actions
-import addItemAction from '@actions/addItem'
+import addItemAction from "@actions/addItem"
 
 const useItems = () => {
   const dispatch = useDispatch()

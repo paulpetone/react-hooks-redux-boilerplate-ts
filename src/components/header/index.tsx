@@ -1,5 +1,5 @@
-import { Link } from 'gatsby'
-import './header.styl'
+import { Link } from "gatsby"
+import "./header.styl"
 
 interface Props {
   siteTitle: string
@@ -7,7 +7,7 @@ interface Props {
 
 export default ({ siteTitle }: Props) => (
   <nav className="header">
-    { siteTitle }
+    {siteTitle}
     <ul className="header__container">
       <li>
         <Link to="/">Home</Link>
@@ -16,7 +16,9 @@ export default ({ siteTitle }: Props) => (
         <Link to="/example">Examples of usage</Link>
       </li>
       <li>
-        <Link to={`/pageWithUrlParams/${Date.now()}`}>Page with url params</Link>
+        <Link to={`/pageWithUrlParams/${Date.now()}`}>
+          Page with url params
+        </Link>
       </li>
       <li>
         <Link to="/about">About</Link>

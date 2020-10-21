@@ -1,11 +1,11 @@
 export interface ItemString {
-    item: string
+  item: string
 }
 
 export interface NameString {
-    name: string
+  name: string
 }
 
 export interface IdNumber {
-    id: number
+  id: number
 }

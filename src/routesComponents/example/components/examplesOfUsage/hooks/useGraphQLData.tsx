@@ -1,24 +1,24 @@
-import { useStaticQuery, graphql } from 'gatsby'
+import { useStaticQuery, graphql } from "gatsby"
 
 export default () => {
-    const { example } = useStaticQuery(
-        graphql`
-            query {
-                example {
-                    nameWithOwner
-                    url
-                    anyOtherData {
-                        hi,
-                        owner {
-                            id
-                        }
-                    }
-                }
+  const { example } = useStaticQuery(
+    graphql`
+      query {
+        example {
+          nameWithOwner
+          url
+          anyOtherData {
+            hi
+            owner {
+              id
             }
-        `
-      )
+          }
+        }
+      }
+    `
+  )
 
-    return {
-        graphQLExample: example
-    }
+  return {
+    graphQLExample: example,
+  }
 }

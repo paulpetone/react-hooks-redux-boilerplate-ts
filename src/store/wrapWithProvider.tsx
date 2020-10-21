@@ -1,5 +1,5 @@
-import { Provider } from 'react-redux'
-import store from './createStore'
+import { Provider } from "react-redux"
+import store from "./createStore"
 
 interface Props {
   element: JSX.Element

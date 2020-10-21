@@ -1,6 +1,6 @@
 interface HandlersProps {
-  inputValue: string,
-  addItem: (itemText: string) => void,
+  inputValue: string
+  addItem: (itemText: string) => void
   setInputValue: React.Dispatch<React.SetStateAction<string>>
 }
 

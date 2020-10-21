@@ -5,18 +5,18 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import Helmet from 'react-helmet'
-import { useStaticQuery, graphql } from 'gatsby'
+import Helmet from "react-helmet"
+import { useStaticQuery, graphql } from "gatsby"
 
 interface MetaData {
-  name: string,
+  name: string
   content: string
 }
 
 interface Props {
-  description: any,
-  lang: any,
-  meta: Array<MetaData>,
+  description: any
+  lang: any
+  meta: Array<MetaData>
   title: string
 }
 
@@ -82,6 +82,5 @@ function SEO(props: Props) {
     />
   )
 }
-
 
 export default SEO

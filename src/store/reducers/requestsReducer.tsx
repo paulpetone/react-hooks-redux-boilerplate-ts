@@ -1,38 +1,41 @@
 interface Action {
-  type: string,
+  type: string
   requestData: {
-    url: string,
-    key: string,
-    dispatch: Function,
-    method: string,
+    url: string
+    key: string
+    dispatch: Function
+    method: string
     body: any
-  },
+  }
   responseData: {
-    result: any,
-    responseKey: string,
+    result: any
+    responseKey: string
     status: string
   }
 }
 
 const INITIAL_STATE: any = {}
 
-export default (state = INITIAL_STATE, { type, requestData, responseData }: Action) => {
+export default (
+  state = INITIAL_STATE,
+  { type, requestData, responseData }: Action
+) => {
   switch (type) {
-    case 'FETCH_DATA':
+    case "FETCH_DATA":
       const { url, key, method, body, dispatch } = requestData
-      
+
       const fetchData = async () => {
         try {
           const response = await fetch(url, { method, body })
           const result = await response.json()
 
           dispatch({
-            type: 'SET_DATA',
-            responseData: { result, status: 'done', responseKey: key },
+            type: "SET_DATA",
+            responseData: { result, status: "done", responseKey: key },
           })
         } catch (error) {
           dispatch({
-            type: 'SET_DATA',
+            type: "SET_DATA",
             responseData: { status: error.message, responseKey: key },
           })
         }
@@ -43,10 +46,10 @@ export default (state = INITIAL_STATE, { type, requestData, responseData }: Acti
         ...state,
         [key]: {
           ...state[key],
-          status: 'pending',
+          status: "pending",
         },
       }
-    case 'SET_DATA':
+    case "SET_DATA":
       const { result, responseKey, status } = responseData
       return {
         ...state,
