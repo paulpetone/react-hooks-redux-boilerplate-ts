@@ -9,57 +9,56 @@ const mockStore = configureStore([])
 const useStaticQuery = jest.spyOn(Gatsby, 'useStaticQuery')
 
 useStaticQuery.mockImplementation(() => ({
-    "example": {
-        "nameWithOwner": "gatsbyjs/gatsby",
-        "url": "https://github.com/gatsbyjs/gatsby",
-        "anyOtherData": {
-            "hi": "hola",
-            "owner": {
-                "id": 12551863
-            }
-        }
-    }
+  example: {
+    nameWithOwner: 'gatsbyjs/gatsby',
+    url: 'https://github.com/gatsbyjs/gatsby',
+    anyOtherData: {
+      hi: 'hola',
+      owner: {
+        id: 12551863,
+      },
+    },
+  },
 }))
 
-
 describe('ExamplesOfUsage', () => {
-    let component
-    let mockedStore
+  let component
+  let mockedStore
 
-    beforeEach(() => {
-        mockedStore = mockStore({
-            items: ['store item']
-        })
-
-        component = render(
-            <Provider store={mockedStore}>
-                <ExamplesOfUsage />
-            </Provider>
-        )
+  beforeEach(() => {
+    mockedStore = mockStore({
+      items: ['store item'],
     })
 
-    it('renders correctly', () => {
-        expect(component.baseElement).toMatchSnapshot()
-    })
+    component = render(
+      <Provider store={mockedStore}>
+        <ExamplesOfUsage />
+      </Provider>
+    )
+  })
 
-    it('renders example 1 with add item feature', () => {
-        mockedStore.dispatch = jest.fn()
-        const { getByText, getByLabelText } = component
-        const button = getByText('Add Item')
-        const input = getByLabelText('Add Item:')
+  it('renders correctly', () => {
+    expect(component.baseElement).toMatchSnapshot()
+  })
 
-        fireEvent.change(input, { target: { value: 'new item' } })
-        fireEvent.click(button, new MouseEvent('click'))
+  it('renders example 1 with add item feature', () => {
+    mockedStore.dispatch = jest.fn()
+    const { getByText, getByLabelText } = component
+    const button = getByText('Add Item')
+    const input = getByLabelText('Add Item:')
 
-        expect(mockedStore.dispatch).toHaveBeenCalledTimes(1)
-    })
+    fireEvent.change(input, { target: { value: 'new item' } })
+    fireEvent.click(button, new MouseEvent('click'))
 
-    it('renders example 3 with gatsby data', () => {
-        const { getByText } = component
+    expect(mockedStore.dispatch).toHaveBeenCalledTimes(1)
+  })
 
-        getByText('Url: https://github.com/gatsbyjs/gatsby')
-        getByText('NameWithOwner: gatsbyjs/gatsby')
-        getByText('AnyOtherData.Hi: hola')
-        getByText('AnyOtherData.Owner.id: 12551863')
-    })
+  it('renders example 3 with gatsby data', () => {
+    const { getByText } = component
+
+    getByText('Url: https://github.com/gatsbyjs/gatsby')
+    getByText('NameWithOwner: gatsbyjs/gatsby')
+    getByText('AnyOtherData.Hi: hola')
+    getByText('AnyOtherData.Owner.id: 12551863')
+  })
 })
