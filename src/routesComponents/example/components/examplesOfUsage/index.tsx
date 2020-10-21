@@ -2,16 +2,16 @@ import enhancer from './hooks'
 import Example1 from './Example1'
 import Example2 from './Example2'
 import Example3 from './Example3'
-import { ExampleListProps } from '@interfaces/ExampleInterfaces'
+import { ExamplesOfUsageProps } from '@interfaces/ExampleInterfaces'
 import './examplesOfUsage.styl'
 
-const ExampleList = ({
+const ExamplesOfUsage = ({
   items,
   onInputChange,
   handleAddItem,
   graphQLExample,
   repos,
-}: ExampleListProps) => (
+}: ExamplesOfUsageProps) => (
   <div className="examples">
     This is an example using all u gonna need to create any component (store,
     handlers, state, effects and graphql)
@@ -30,4 +30,4 @@ const ExampleList = ({
   </div>
 )
 
-export default enhancer(ExampleList)
+export default enhancer(ExamplesOfUsage)

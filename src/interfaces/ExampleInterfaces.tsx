@@ -1,6 +1,6 @@
 import { IdNumber, ItemString, NameString } from '@interfaces/SharedInterfaces'
 
-export interface ExampleListProps {
+export interface ExamplesOfUsageProps {
   graphQLExample: GraphQLExample
   repos: Array<NameString>
   items: Array<ItemString>
