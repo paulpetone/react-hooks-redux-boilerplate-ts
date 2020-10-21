@@ -21,7 +21,7 @@ export default (
   { type, requestData, responseData }: Action
 ) => {
   switch (type) {
-    case "FETCH_DATA":
+    case 'FETCH_DATA':
       const { url, key, method, body, dispatch } = requestData
 
       const fetchData = async () => {
@@ -30,12 +30,12 @@ export default (
           const result = await response.json()
 
           dispatch({
-            type: "SET_DATA",
-            responseData: { result, status: "done", responseKey: key },
+            type: 'SET_DATA',
+            responseData: { result, status: 'done', responseKey: key },
           })
         } catch (error) {
           dispatch({
-            type: "SET_DATA",
+            type: 'SET_DATA',
             responseData: { status: error.message, responseKey: key },
           })
         }
@@ -46,10 +46,10 @@ export default (
         ...state,
         [key]: {
           ...state[key],
-          status: "pending",
+          status: 'pending',
         },
       }
-    case "SET_DATA":
+    case 'SET_DATA':
       const { result, responseKey, status } = responseData
       return {
         ...state,

@@ -1,4 +1,4 @@
-import { Example1Props } from "@interfaces/ExampleInterfaces"
+import { Example1Props } from '@interfaces/ExampleInterfaces'
 
 export default ({ items, handleAddItem, onInputChange }: Example1Props) => (
   <>

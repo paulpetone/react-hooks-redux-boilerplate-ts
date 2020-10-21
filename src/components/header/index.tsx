@@ -1,5 +1,5 @@
-import { Link } from "gatsby"
-import "./header.styl"
+import { Link } from 'gatsby'
+import './header.styl'
 
 interface Props {
   siteTitle: string

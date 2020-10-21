@@ -1,4 +1,4 @@
-import { Example2Props } from "@interfaces/ExampleInterfaces"
+import { Example2Props } from '@interfaces/ExampleInterfaces'
 
 export default ({ repos }: Example2Props) => (
   <>

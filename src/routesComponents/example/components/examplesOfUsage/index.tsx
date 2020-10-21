@@ -1,9 +1,9 @@
-import enhancer from "./hooks"
-import Example1 from "./Example1"
-import Example2 from "./Example2"
-import Example3 from "./Example3"
-import { ExampleListProps } from "@interfaces/ExampleInterfaces"
-import "./examplesOfUsage.styl"
+import enhancer from './hooks'
+import Example1 from './Example1'
+import Example2 from './Example2'
+import Example3 from './Example3'
+import { ExampleListProps } from '@interfaces/ExampleInterfaces'
+import './examplesOfUsage.styl'
 
 const ExampleList = ({
   items,
