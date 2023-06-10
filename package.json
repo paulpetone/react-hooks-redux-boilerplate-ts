@@ -11,7 +11,7 @@
     "@types/react-dom": "^16.9.5",
     "@types/react-helmet": "^5.0.15",
     "@types/react-redux": "^7.1.7",
-    "gatsby": "^2.19.7",
+    "gatsby": "^4.25.7",
     "gatsby-alias-imports": "^1.0.4",
     "gatsby-image": "^2.2.39",
     "gatsby-plugin-manifest": "^2.2.39",
